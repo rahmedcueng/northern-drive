@@ -1,0 +1,1305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Northern Drive is a GTA used car dealership offering practical pre-owned vehicles, appointment-based viewings, and vehicle inquiries across Toronto, Mississauga, Brampton, Vaughan, Markham, Scarborough, and nearby GTA communities." />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Northern Drive" />
+  <meta name="geo.region" content="CA-ON" />
+  <meta name="geo.placename" content="Greater Toronto Area" />
+  <meta name="keywords" content="used cars GTA, used car dealership GTA, pre-owned vehicles Toronto, used cars Toronto, used cars Mississauga, used cars Brampton, used cars Vaughan, used cars Markham, affordable used cars Ontario, Northern Drive" />
+  <!-- Replace YOUR-GITHUB-USERNAME after creating your GitHub repository. -->
+  <link rel="canonical" href="https://YOUR-GITHUB-USERNAME.github.io/northern-drive/" />
+
+  <meta property="og:title" content="Northern Drive | Used Cars for Sale in the GTA" />
+  <meta property="og:description" content="Shop practical pre-owned vehicles with Northern Drive, a GTA used car dealership serving Toronto, Mississauga, Brampton, Vaughan, Markham, Scarborough, and surrounding areas by appointment." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://YOUR-GITHUB-USERNAME.github.io/northern-drive/" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1493238792000-8113da705763?auto=format&fit=crop&w=1200&q=80" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Northern Drive | GTA Used Car Dealership" />
+  <meta name="twitter:description" content="Practical used cars and pre-owned vehicles for GTA drivers. Book an appointment with Northern Drive." />
+
+  <title>Northern Drive | Used Cars for Sale in the GTA | Pre-Owned Vehicle Dealership</title>
+
+  <style>
+    :root {
+      --dark: #0b1724;
+      --navy: #102235;
+      --blue: #1b4965;
+      --gold: #f4b942;
+      --white: #ffffff;
+      --soft: #f7f9fb;
+      --soft-blue: #eaf4f8;
+      --text: #243447;
+      --muted: #64748b;
+      --border: #d9e2ec;
+      --shadow: 0 18px 50px rgba(13, 27, 42, 0.14);
+      --radius: 24px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      background: var(--white);
+      line-height: 1.6;
+    }
+
+    img {
+      width: 100%;
+      display: block;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .container {
+      width: min(1120px, 92%);
+      margin: 0 auto;
+    }
+
+    .hero {
+      min-height: 92vh;
+      display: flex;
+      align-items: center;
+      color: var(--white);
+      padding: 54px 0;
+      background:
+        linear-gradient(90deg, rgba(11, 23, 36, 0.92), rgba(11, 23, 36, 0.70), rgba(11, 23, 36, 0.28)),
+        url("https://images.unsplash.com/photo-1493238792000-8113da705763?auto=format&fit=crop&w=1800&q=80") center/cover no-repeat;
+    }
+
+    .hero-panel {
+      max-width: 820px;
+      padding: clamp(28px, 5vw, 54px);
+      border-radius: 32px;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(10px);
+    }
+
+    .brand-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-bottom: 34px;
+      padding-bottom: 22px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+    }
+
+    .brand-mark {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .brand-icon {
+      width: 46px;
+      height: 46px;
+      display: grid;
+      place-items: center;
+      border-radius: 16px;
+      background: var(--gold);
+      color: var(--dark);
+      font-weight: 900;
+      font-size: 1.1rem;
+    }
+
+    .brand-name {
+      font-size: 1.2rem;
+      font-weight: 900;
+      letter-spacing: 0.2px;
+    }
+
+    .brand-subtitle {
+      font-size: 0.9rem;
+      color: #d8e3ea;
+    }
+
+    .brand-contact {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .contact-chip {
+      display: inline-flex;
+      align-items: center;
+      min-height: 40px;
+      padding: 9px 13px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.11);
+      border: 1px solid rgba(255, 255, 255, 0.17);
+      color: #edf5f9;
+      text-decoration: none;
+      font-size: 0.88rem;
+      font-weight: 700;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(244, 185, 66, 0.16);
+      border: 1px solid rgba(244, 185, 66, 0.34);
+      color: #ffe4a3;
+      padding: 8px 14px;
+      border-radius: 999px;
+      font-weight: 800;
+      margin-bottom: 20px;
+      font-size: 0.9rem;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.4rem, 7vw, 5.1rem);
+      line-height: 0.98;
+      letter-spacing: -2px;
+      margin-bottom: 22px;
+    }
+
+    .hero p {
+      max-width: 680px;
+      color: #e4edf3;
+      font-size: clamp(1.02rem, 2.5vw, 1.25rem);
+      margin-bottom: 30px;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      min-height: 50px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 13px 20px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 900;
+      transition: transform 0.2s ease, background 0.2s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .btn-primary {
+      background: var(--gold);
+      color: var(--dark);
+    }
+
+    .btn-secondary {
+      background: rgba(255, 255, 255, 0.10);
+      color: var(--white);
+      border: 1px solid rgba(255, 255, 255, 0.26);
+    }
+
+    section {
+      padding: 84px 0;
+    }
+
+    .section-heading {
+      max-width: 780px;
+      margin-bottom: 38px;
+    }
+
+    .section-heading span {
+      display: inline-block;
+      color: var(--blue);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: 900;
+      font-size: 0.84rem;
+      margin-bottom: 8px;
+    }
+
+    .section-heading h2 {
+      color: var(--dark);
+      font-size: clamp(2rem, 4vw, 3rem);
+      line-height: 1.1;
+      margin-bottom: 14px;
+      letter-spacing: -0.8px;
+    }
+
+    .section-heading p {
+      color: var(--muted);
+      font-size: 1.04rem;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1.02fr 0.98fr;
+      gap: 38px;
+      align-items: center;
+    }
+
+    .about-card {
+      background: var(--soft);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: clamp(24px, 4vw, 36px);
+    }
+
+    .about-card p {
+      color: var(--muted);
+    }
+
+    .about-image img {
+      height: 465px;
+      object-fit: cover;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      margin-top: 26px;
+    }
+
+    .stat {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 18px;
+    }
+
+    .stat strong {
+      display: block;
+      color: var(--dark);
+      font-size: 1.32rem;
+      line-height: 1.2;
+      margin-bottom: 5px;
+    }
+
+    .stat small {
+      color: var(--muted);
+    }
+
+    .why {
+      background: var(--soft-blue);
+    }
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+    }
+
+    .feature-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px;
+      box-shadow: 0 8px 24px rgba(13, 27, 42, 0.06);
+    }
+
+    .feature-icon {
+      width: 46px;
+      height: 46px;
+      border-radius: 15px;
+      background: var(--navy);
+      color: var(--gold);
+      display: grid;
+      place-items: center;
+      font-size: 1.25rem;
+      font-weight: 900;
+      margin-bottom: 16px;
+    }
+
+    .feature-card h3 {
+      color: var(--dark);
+      margin-bottom: 8px;
+      font-size: 1.08rem;
+    }
+
+    .feature-card p {
+      color: var(--muted);
+      font-size: 0.96rem;
+    }
+
+    .inventory-note {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 18px;
+      flex-wrap: wrap;
+      background: var(--soft);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 18px 20px;
+      margin-bottom: 24px;
+      color: var(--muted);
+    }
+
+    .inventory-note strong {
+      color: var(--dark);
+    }
+
+    .listing-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 22px;
+    }
+
+    .vehicle-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: 0 10px 28px rgba(13, 27, 42, 0.08);
+    }
+
+    .vehicle-image {
+      height: 215px;
+      position: relative;
+      overflow: hidden;
+      background: var(--soft);
+    }
+
+    .vehicle-image img {
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+
+    .vehicle-card:hover img {
+      transform: scale(1.04);
+    }
+
+    .badge {
+      position: absolute;
+      top: 14px;
+      left: 14px;
+      background: var(--gold);
+      color: var(--dark);
+      font-weight: 900;
+      padding: 7px 11px;
+      border-radius: 999px;
+      font-size: 0.78rem;
+    }
+
+    .sold-badge {
+      background: var(--dark);
+      color: var(--white);
+    }
+
+    .vehicle-body {
+      padding: 20px;
+    }
+
+    .vehicle-body h3 {
+      color: var(--dark);
+      font-size: 1.08rem;
+      line-height: 1.3;
+      margin-bottom: 8px;
+    }
+
+    .price {
+      color: var(--blue);
+      font-size: 1.22rem;
+      font-weight: 900;
+      margin-bottom: 12px;
+    }
+
+    .vehicle-meta {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-bottom: 14px;
+    }
+
+    .vehicle-meta span {
+      background: var(--soft);
+      border: 1px solid var(--border);
+      color: var(--muted);
+      padding: 5px 9px;
+      border-radius: 999px;
+      font-size: 0.81rem;
+    }
+
+    .vehicle-note {
+      color: var(--muted);
+      font-size: 0.91rem;
+    }
+
+    .sold {
+      background: var(--soft);
+    }
+
+    .process-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .process-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-left: 5px solid var(--gold);
+      border-radius: 20px;
+      padding: 24px;
+      box-shadow: 0 8px 24px rgba(13, 27, 42, 0.07);
+    }
+
+    .process-card strong {
+      display: block;
+      color: var(--blue);
+      font-size: 0.84rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+    }
+
+    .process-card h3 {
+      color: var(--dark);
+      margin-bottom: 8px;
+    }
+
+    .process-card p {
+      color: var(--muted);
+    }
+
+
+
+    .local-seo {
+      background: var(--white);
+    }
+
+    .local-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 34px;
+      align-items: start;
+    }
+
+    .local-panel {
+      background: var(--soft);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: clamp(24px, 4vw, 34px);
+    }
+
+    .local-panel h3 {
+      color: var(--dark);
+      font-size: 1.35rem;
+      margin-bottom: 12px;
+    }
+
+    .local-panel p {
+      color: var(--muted);
+      margin-bottom: 16px;
+    }
+
+    .area-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+    }
+
+    .area-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 14px;
+      font-weight: 800;
+      color: var(--dark);
+    }
+
+    .area-card small {
+      display: block;
+      margin-top: 4px;
+      color: var(--muted);
+      font-weight: 500;
+    }
+
+    .faq {
+      background: var(--soft-blue);
+    }
+
+    .faq-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+
+    details {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 18px 20px;
+      box-shadow: 0 8px 24px rgba(13, 27, 42, 0.05);
+    }
+
+    summary {
+      cursor: pointer;
+      color: var(--dark);
+      font-weight: 900;
+      list-style-position: outside;
+    }
+
+    details p {
+      margin-top: 12px;
+      color: var(--muted);
+    }
+
+    .contact {
+      background:
+        linear-gradient(rgba(11, 23, 36, 0.92), rgba(11, 23, 36, 0.92)),
+        url("https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&w=1800&q=80") center/cover no-repeat;
+      color: var(--white);
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      align-items: start;
+    }
+
+    .contact-card {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      border-radius: var(--radius);
+      padding: clamp(24px, 4vw, 32px);
+      backdrop-filter: blur(8px);
+    }
+
+    .contact-card h2,
+    .contact-card h3 {
+      color: var(--white);
+      margin-bottom: 14px;
+    }
+
+    .contact-card p {
+      color: #dce7ef;
+      margin-bottom: 16px;
+    }
+
+    .contact-list {
+      display: grid;
+      gap: 14px;
+      margin-top: 24px;
+    }
+
+    .contact-item {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      border-radius: 16px;
+      padding: 16px;
+    }
+
+    .contact-item strong {
+      display: block;
+      color: var(--gold);
+      margin-bottom: 4px;
+    }
+
+    .contact-item a {
+      color: var(--white);
+      text-decoration: none;
+      font-weight: 800;
+      word-break: break-word;
+    }
+
+    .hours {
+      display: grid;
+      gap: 10px;
+      margin-top: 16px;
+    }
+
+    .hours div {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+    }
+
+    .disclaimer {
+      background: var(--dark);
+      color: #cbd5e1;
+      padding: 22px 0;
+      font-size: 0.88rem;
+    }
+
+    footer {
+      background: #06101b;
+      color: var(--white);
+      padding: 34px 0;
+    }
+
+    footer .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    footer strong {
+      color: var(--gold);
+    }
+
+    @media (max-width: 980px) {
+      .hero {
+        min-height: auto;
+        padding: 44px 0;
+      }
+
+      .about-grid,
+      .local-content,
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .feature-grid,
+      .listing-grid,
+      .faq-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .process-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .about-image img {
+        height: 350px;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .container {
+        width: min(100% - 28px, 1120px);
+      }
+
+      .hero {
+        padding: 18px 0 44px;
+        background:
+          linear-gradient(rgba(11, 23, 36, 0.88), rgba(11, 23, 36, 0.84)),
+          url("https://images.unsplash.com/photo-1493238792000-8113da705763?auto=format&fit=crop&w=1200&q=80") center/cover no-repeat;
+      }
+
+      .hero-panel {
+        padding: 22px;
+        border-radius: 24px;
+      }
+
+      .brand-row {
+        align-items: flex-start;
+        margin-bottom: 28px;
+      }
+
+      .brand-contact,
+      .hero-actions {
+        width: 100%;
+      }
+
+      .contact-chip,
+      .btn {
+        width: 100%;
+      }
+
+      section {
+        padding: 62px 0;
+      }
+
+      .feature-grid,
+      .listing-grid,
+      .stats,
+      .area-grid,
+      .faq-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .vehicle-image {
+        height: 230px;
+      }
+
+      .hours div {
+        flex-direction: column;
+        gap: 2px;
+      }
+
+      footer .container {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AutomotiveBusiness",
+    "name": "Northern Drive",
+    "url": "https://YOUR-GITHUB-USERNAME.github.io/northern-drive/",
+    "description": "Northern Drive is a Greater Toronto Area used car dealership offering practical pre-owned vehicles, appointment-based viewings, and vehicle inquiries across Toronto, Mississauga, Brampton, Vaughan, Markham, Scarborough, North York, and nearby Ontario communities.",
+    "areaServed": [
+      "Greater Toronto Area",
+      "Toronto",
+      "Mississauga",
+      "Brampton",
+      "Vaughan",
+      "Markham",
+      "Scarborough",
+      "North York",
+      "Richmond Hill",
+      "Oakville",
+      "Pickering",
+      "Ajax"
+    ],
+    "email": "northerndrive.parts@gmail.com",
+    "telephone": "+1-613-265-1440",
+    "address": {
+      "@type": "PostalAddress",
+      "addressRegion": "ON",
+      "addressCountry": "CA",
+      "addressLocality": "Greater Toronto Area"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "10:00",
+        "closes": "19:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Saturday",
+        "opens": "10:00",
+        "closes": "17:00"
+      }
+    ],
+    "priceRange": "$$"
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Does Northern Drive sell used cars in the Greater Toronto Area?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Northern Drive serves used car buyers across the Greater Toronto Area, including Toronto, Mississauga, Brampton, Vaughan, Markham, Scarborough, North York, Richmond Hill, Pickering, Ajax, and nearby communities by appointment."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I book a vehicle viewing with Northern Drive?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Contact Northern Drive by phone or email with the vehicle you are interested in, your preferred appointment time, and any questions about availability, mileage, pricing, or trade-in options."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What types of vehicles does Northern Drive focus on?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Northern Drive focuses on practical pre-owned vehicles such as sedans, compact SUVs, hatchbacks, and commuter-friendly vehicles suited for everyday driving in Ontario."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="hero-panel">
+          <div class="brand-row">
+            <div class="brand-mark">
+              <div class="brand-icon">ND</div>
+              <div>
+                <div class="brand-name">Northern Drive</div>
+                <div class="brand-subtitle">Used car dealership serving the Greater Toronto Area</div>
+              </div>
+            </div>
+
+            <div class="brand-contact">
+              <a class="contact-chip" href="tel:+16132651440">+1 613-265-1440</a>
+              <a class="contact-chip" href="mailto:northerndrive.parts@gmail.com">Email Us</a>
+            </div>
+          </div>
+
+          <div class="eyebrow">Used Cars for Sale in the GTA</div>
+          <h1>Used cars and pre-owned vehicles for GTA drivers.</h1>
+          <p>
+            Northern Drive helps drivers across Toronto, Mississauga, Brampton, Vaughan, Markham,
+            Scarborough, and the Greater Toronto Area find dependable pre-owned vehicles with clear
+            information, appointment-based viewings, and a straightforward buying experience.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="tel:+16132651440">Call Northern Drive</a>
+            <a class="btn btn-secondary" href="mailto:northerndrive.parts@gmail.com?subject=Vehicle%20Inquiry%20-%20Northern%20Drive">Ask About a Vehicle</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about">
+      <div class="container about-grid">
+        <div class="about-card">
+          <div class="section-heading">
+            <span>About Northern Drive</span>
+            <h2>A GTA used car dealership focused on practical pre-owned vehicles.</h2>
+            <p>
+              Northern Drive works with everyday vehicle buyers looking for dependable used cars, sedans,
+              compact SUVs, hatchbacks, and commuter vehicles for Toronto-area driving, family use, student
+              transportation, and small-business needs.
+            </p>
+          </div>
+
+          <p>
+            Our process is built around useful information and scheduled appointments. Customers can review
+            vehicle highlights, ask questions about used vehicle availability, compare options, and book a
+            viewing without feeling rushed. We keep the experience organized so buyers can focus on whether
+            a vehicle is the right fit for commuting, errands, family travel, or everyday Ontario roads.
+          </p>
+
+          <div class="stats">
+            <div class="stat">
+              <strong>GTA</strong>
+              <small>Primary service area</small>
+            </div>
+            <div class="stat">
+              <strong>By Appt.</strong>
+              <small>Focused viewings</small>
+            </div>
+            <div class="stat">
+              <strong>Daily</strong>
+              <small>Driver-friendly inventory</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-image">
+          <img src="https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&w=1200&q=80" alt="Vehicle interior with steering wheel and dashboard" />
+        </div>
+      </div>
+    </section>
+
+    <section class="why">
+      <div class="container">
+        <div class="section-heading">
+          <span>Why Us</span>
+          <h2>A cleaner way to shop for a used vehicle in the GTA.</h2>
+          <p>
+            Northern Drive keeps the process simple, professional, and centered on the information buyers need
+            before booking a used car viewing in the Greater Toronto Area.
+          </p>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card">
+            <div class="feature-icon">✓</div>
+            <h3>Useful inventory</h3>
+            <p>Vehicles are selected around real-world needs like fuel economy, comfort, cargo space, and daily reliability.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon">i</div>
+            <h3>Clear details</h3>
+            <p>Listings are organized with key information so buyers can compare options before reaching out.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon">↔</div>
+            <h3>Trade-in discussions</h3>
+            <p>Customers can ask about trade-in options and next steps during the inquiry process.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon">⌚</div>
+            <h3>Appointment-based</h3>
+            <p>Viewings are scheduled so each customer has time to inspect the vehicle and ask questions.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section class="local-seo">
+      <div class="container local-content">
+        <div class="section-heading">
+          <span>GTA Used Car Dealer</span>
+          <h2>Serving used vehicle buyers across the Greater Toronto Area.</h2>
+          <p>
+            Whether you are searching for a used car in Toronto, a pre-owned sedan near Mississauga,
+            a commuter vehicle in Brampton, or a practical compact SUV around Vaughan or Markham,
+            Northern Drive is built for buyers who want clear details before they visit.
+          </p>
+          <p>
+            Our inventory focuses on non-luxury, everyday vehicles that make sense for Ontario drivers:
+            fuel-efficient sedans, compact SUVs, hatchbacks, and practical vehicles for school, work,
+            family, and daily commuting.
+          </p>
+        </div>
+
+        <div class="local-panel">
+          <h3>Areas we serve by appointment</h3>
+          <p>
+            Northern Drive supports used car inquiries across the GTA and nearby communities. Contact us
+            to confirm current inventory and arrange a viewing time.
+          </p>
+
+          <div class="area-grid" aria-label="Greater Toronto Area service locations">
+            <div class="area-card">Toronto <small>Used cars and commuter vehicles</small></div>
+            <div class="area-card">Mississauga <small>Pre-owned sedans and SUVs</small></div>
+            <div class="area-card">Brampton <small>Affordable used vehicle options</small></div>
+            <div class="area-card">Vaughan <small>Appointment-based vehicle viewings</small></div>
+            <div class="area-card">Markham <small>Practical daily-driver inventory</small></div>
+            <div class="area-card">Scarborough <small>Reliable cars for everyday driving</small></div>
+            <div class="area-card">North York <small>Compact cars and family vehicles</small></div>
+            <div class="area-card">Richmond Hill <small>Used car inquiries and viewings</small></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="listings">
+      <div class="container">
+        <div class="section-heading">
+          <span>Current Used Cars for Sale</span>
+          <h2>Available used cars and pre-owned vehicles</h2>
+          <p>
+            Browse sample used vehicle listings for the GTA. Replace the sample prices, mileage, condition notes, and photos with your actual inventory before publishing.
+          </p>
+        </div>
+
+        <div class="inventory-note">
+          <span><strong>Inventory note:</strong> Used car availability may change. Contact Northern Drive to confirm current status, mileage, pricing, and appointment times.</span>
+        </div>
+
+        <div class="listing-grid">
+          <article class="vehicle-card">
+            <div class="vehicle-image">
+              <span class="badge">Available</span>
+              <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=1000&q=80" alt="Used Toyota Corolla compact sedan for sale in the GTA stock photo" loading="lazy" />
+            </div>
+            <div class="vehicle-body">
+              <h3>2021 Toyota Corolla LE</h3>
+              <div class="price">$19,980</div>
+              <div class="vehicle-meta">
+                <span>Automatic</span>
+                <span>Gas</span>
+                <span>82,000 km</span>
+              </div>
+              <p class="vehicle-note">Reliable compact sedan with excellent fuel economy and practical daily comfort.</p>
+            </div>
+          </article>
+
+          <article class="vehicle-card">
+            <div class="vehicle-image">
+              <span class="badge">Available</span>
+              <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=1000&q=80" alt="Used Honda Civic compact car for sale near Toronto stock photo" loading="lazy" />
+            </div>
+            <div class="vehicle-body">
+              <h3>2020 Honda Civic LX</h3>
+              <div class="price">$18,750</div>
+              <div class="vehicle-meta">
+                <span>Automatic</span>
+                <span>Gas</span>
+                <span>91,000 km</span>
+              </div>
+              <p class="vehicle-note">Comfortable commuter vehicle with strong resale value and easy city driving.</p>
+            </div>
+          </article>
+
+          <article class="vehicle-card">
+            <div class="vehicle-image">
+              <span class="badge">Available</span>
+              <img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&w=1000&q=80" alt="Used Mazda3 hatchback style vehicle for sale in Ontario stock photo" loading="lazy" />
+            </div>
+            <div class="vehicle-body">
+              <h3>2019 Mazda3 GS</h3>
+              <div class="price">$17,900</div>
+              <div class="vehicle-meta">
+                <span>Automatic</span>
+                <span>Gas</span>
+                <span>96,000 km</span>
+              </div>
+              <p class="vehicle-note">Stylish compact option with a refined interior and responsive handling.</p>
+            </div>
+          </article>
+
+          <article class="vehicle-card">
+            <div class="vehicle-image">
+              <span class="badge">Available</span>
+              <img src="https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&w=1000&q=80" alt="Used compact SUV style vehicle for sale in the GTA stock photo" loading="lazy" />
+            </div>
+            <div class="vehicle-body">
+              <h3>2021 Hyundai Elantra Preferred</h3>
+              <div class="price">$18,400</div>
+              <div class="vehicle-meta">
+                <span>Automatic</span>
+                <span>Gas</span>
+                <span>88,000 km</span>
+              </div>
+              <p class="vehicle-note">Modern sedan with practical features, efficient driving, and clean styling.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="sold">
+      <div class="container">
+        <div class="section-heading">
+          <span>Recently Sold Used Vehicles</span>
+          <h2>Used cars and SUVs that recently found new owners</h2>
+          <p>
+            Recently sold examples help show the type of practical inventory Northern Drive works with.
+          </p>
+        </div>
+
+        <div class="listing-grid">
+          <article class="vehicle-card">
+            <div class="vehicle-image">
+              <span class="badge sold-badge">Sold</span>
+              <img src="https://images.unsplash.com/photo-1494905998402-395d579af36f?auto=format&fit=crop&w=1000&q=80" alt="Recently sold used SUV in the Greater Toronto Area stock photo" loading="lazy" />
+            </div>
+            <div class="vehicle-body">
+              <h3>2018 Ford Escape SE</h3>
+              <div class="price">Sold</div>
+              <div class="vehicle-meta">
+                <span>SUV</span>
+                <span>Automatic</span>
+                <span>AWD</span>
+              </div>
+              <p class="vehicle-note">Practical compact SUV selected for year-round GTA driving.</p>
+            </div>
+          </article>
+
+          <article class="vehicle-card">
+            <div class="vehicle-image">
+              <span class="badge sold-badge">Sold</span>
+              <img src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=1000&q=80" alt="Recently sold used sedan at Northern Drive stock photo" loading="lazy" />
+            </div>
+            <div class="vehicle-body">
+              <h3>2020 Nissan Rogue SV</h3>
+              <div class="price">Sold</div>
+              <div class="vehicle-meta">
+                <span>SUV</span>
+                <span>Automatic</span>
+                <span>Family-friendly</span>
+              </div>
+              <p class="vehicle-note">Comfortable SUV with versatile cargo space and daily-use features.</p>
+            </div>
+          </article>
+
+          <article class="vehicle-card">
+            <div class="vehicle-image">
+              <span class="badge sold-badge">Sold</span>
+              <img src="https://images.unsplash.com/photo-1549924231-f129b911e442?auto=format&fit=crop&w=1000&q=80" alt="Recently sold compact used sedan in the GTA stock photo" loading="lazy" />
+            </div>
+            <div class="vehicle-body">
+              <h3>2017 Chevrolet Cruze LT</h3>
+              <div class="price">Sold</div>
+              <div class="vehicle-meta">
+                <span>Sedan</span>
+                <span>Automatic</span>
+                <span>Fuel efficient</span>
+              </div>
+              <p class="vehicle-note">Affordable commuter vehicle with practical comfort and good efficiency.</p>
+            </div>
+          </article>
+
+          <article class="vehicle-card">
+            <div class="vehicle-image">
+              <span class="badge sold-badge">Sold</span>
+              <img src="https://images.unsplash.com/photo-1523983388277-336a66bf9bcd?auto=format&fit=crop&w=1000&q=80" alt="Recently sold hatchback style used vehicle in Ontario stock photo" loading="lazy" />
+            </div>
+            <div class="vehicle-body">
+              <h3>2019 Kia Forte EX</h3>
+              <div class="price">Sold</div>
+              <div class="vehicle-meta">
+                <span>Sedan</span>
+                <span>Automatic</span>
+                <span>Clean interior</span>
+              </div>
+              <p class="vehicle-note">A practical sedan option for commuting, school, and everyday errands.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="process">
+      <div class="container">
+        <div class="section-heading">
+          <span>Simple Used Car Buying Process</span>
+          <h2>From used vehicle inquiry to viewing</h2>
+          <p>
+            Northern Drive keeps the next steps clear for buyers comparing used cars, asking about vehicle details, or booking their first appointment-based viewing.
+          </p>
+        </div>
+
+        <div class="process-grid">
+          <article class="process-card">
+            <strong>Step 01</strong>
+            <h3>Send an inquiry</h3>
+            <p>Contact us with the vehicle you are interested in, your preferred viewing time, and any questions.</p>
+          </article>
+
+          <article class="process-card">
+            <strong>Step 02</strong>
+            <h3>Review vehicle details</h3>
+            <p>We confirm availability, basic details, and the best time for an appointment-based viewing.</p>
+          </article>
+
+          <article class="process-card">
+            <strong>Step 03</strong>
+            <h3>Book your viewing</h3>
+            <p>Visit by appointment in the GTA and review the vehicle in person before making a decision.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section class="faq">
+      <div class="container">
+        <div class="section-heading">
+          <span>Used Car Questions</span>
+          <h2>Frequently asked questions</h2>
+          <p>
+            Helpful answers for GTA buyers looking for used cars, pre-owned sedans, compact SUVs,
+            hatchbacks, and commuter-friendly vehicles through Northern Drive.
+          </p>
+        </div>
+
+        <div class="faq-grid">
+          <details>
+            <summary>Does Northern Drive sell used cars in the Greater Toronto Area?</summary>
+            <p>
+              Yes. Northern Drive serves used vehicle buyers across the GTA, including Toronto,
+              Mississauga, Brampton, Vaughan, Markham, Scarborough, North York, Richmond Hill,
+              Pickering, Ajax, and nearby Ontario communities by appointment.
+            </p>
+          </details>
+
+          <details>
+            <summary>How do I book a used vehicle viewing?</summary>
+            <p>
+              Call or email Northern Drive with the vehicle you are interested in, your preferred viewing
+              time, and any questions about availability, mileage, price, features, or trade-in options.
+            </p>
+          </details>
+
+          <details>
+            <summary>What types of vehicles does Northern Drive focus on?</summary>
+            <p>
+              Northern Drive focuses on practical non-luxury used vehicles such as sedans, compact SUVs,
+              hatchbacks, and commuter-friendly vehicles suited for everyday driving in Ontario.
+            </p>
+          </details>
+
+          <details>
+            <summary>Can I ask about trade-in options?</summary>
+            <p>
+              Yes. You can mention your trade-in vehicle during your inquiry, including the year, make,
+              model, mileage, and overall condition, so the next steps can be discussed.
+            </p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact">
+      <div class="container contact-grid">
+        <div class="contact-card">
+          <h2>Contact Northern Drive</h2>
+          <p>
+            Reach out to ask about current used cars for sale, recently sold vehicles, GTA viewing availability,
+            or trade-in conversations. Northern Drive responds to vehicle inquiries by phone or email.
+          </p>
+
+          <div class="contact-list">
+            <div class="contact-item">
+              <strong>Email</strong>
+              <a href="mailto:northerndrive.parts@gmail.com">northerndrive.parts@gmail.com</a>
+            </div>
+
+            <div class="contact-item">
+              <strong>Phone</strong>
+              <a href="tel:+16132651440">+1 613-265-1440</a>
+            </div>
+
+            <div class="contact-item">
+              <strong>Location</strong>
+              <span>Greater Toronto Area, Ontario — by appointment</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-card">
+          <h3>Appointment Hours</h3>
+          <p>Appointments help us prepare vehicle information before you arrive.</p>
+
+          <div class="hours">
+            <div><span>Monday - Friday</span><strong>10:00 AM - 7:00 PM</strong></div>
+            <div><span>Saturday</span><strong>10:00 AM - 5:00 PM</strong></div>
+            <div><span>Sunday</span><strong>By appointment</strong></div>
+          </div>
+
+          <br />
+
+          <a class="btn btn-primary" href="mailto:northerndrive.parts@gmail.com?subject=Book%20a%20Vehicle%20Viewing&body=Hello%20Northern%20Drive,%0D%0A%0D%0AI%20would%20like%20to%20book%20a%20vehicle%20viewing.%0D%0A%0D%0AVehicle%20of%20interest:%0D%0APreferred%20date/time:%0D%0AQuestions:%0D%0A">
+            Book a Viewing
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="disclaimer">
+    <div class="container">
+      Stock images are used for website layout purposes. Replace with actual vehicle photos before final publication.
+      Vehicle availability, pricing, mileage, condition, and features should be verified directly with Northern Drive.
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div>
+        <strong>Northern Drive</strong><br />
+        GTA Used Car & Pre-Owned Vehicle Dealership
+      </div>
+      <div>
+        © 2026 Northern Drive. All rights reserved.
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
